@@ -13,5 +13,8 @@ Music genres: hardstyle, hardcore, raw hardstyle, early hardcore, happy hardcore
 - Book your bustrip to the party via Event Travel, Partybussen or another travel agency.
 - View the party agenda offline. It is downloaded on your phone.
 
+![Screenshot 1](doc/screen1.png)
+![Screenshot 3](doc/screen3.png)
+
 ## Lifespan
-Partyagenda - Herder Styles was available for free in the Netherlands from 2014 to february 2017. It was distributed through Google Play.
+Partyagenda - Harder Styles was available for free in the Netherlands from 2014 to february 2017. It was distributed through Google Play.
