@@ -1,6 +1,6 @@
 # Partyagenda - Harder Styles for Android
 
-Partyagenda - Harder Styles is an Android app. It provides an overview of all populair parties in the Harder Styles. It is the ideal party agenda for fans of hardstyle and hardcore. 
+Partyagenda - Harder Styles provides an overview of all populair parties in the Harder Styles. It is the ideal party agenda for fans of hardstyle and hardcore. 
 
 Music genres: hardstyle, hardcore, raw hardstyle, early hardcore, happy hardcore, early rave, frenchcore, jump & freestyle.
 
@@ -18,4 +18,4 @@ Music genres: hardstyle, hardcore, raw hardstyle, early hardcore, happy hardcore
 
 ## Code release
 Version 1.0 was released in 2012. This version was succeeded by version 2.0 in 2014. The project ended in February 2017 and the source code of the application was made publicly available with this event.
-The source code is made available to provide code snippets for other Android developers. Bear in mind that this app is targeting Android 4.0.4. (API level 15). Some code may be outdated.
+The source code is made available to provide code snippets for other Android developers. Bare in mind that this app targets Android 4.0.4 (API level 15). Some code may be outdated.
