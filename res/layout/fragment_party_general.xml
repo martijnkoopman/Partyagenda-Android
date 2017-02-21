@@ -1,0 +1,348 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    tools:context=".PartyGeneralFragment">
+	    
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+	
+		<TextView android:id="@+id/party_name"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:singleLine="true"
+			android:layout_marginTop="10dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:textSize="18sp"
+			android:textColor="#FFF"
+			android:text="20 Years Rotterdam Terror Corps"
+			android:textStyle="bold"/>
+		
+		<TextView android:id="@+id/party_subname"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:singleLine="true"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:textSize="14sp"
+			android:textColor="#FFF"
+			android:text="The Depths of Despair"
+			android:textStyle="italic"/>
+		
+		<!-- Blue divider 
+		<ImageView android:layout_width="match_parent"
+	 	   	android:layout_height="2dp"
+	    	android:background="#33b5e5"/>
+	    -->
+		<LinearLayout android:orientation="horizontal"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="10dp">
+		    
+			<!-- Flyer dimensions 300x212 -->
+			<ImageView android:id="@+id/party_flyer_thumb"
+			    android:contentDescription="Flyer thumbnail"
+			    android:layout_width="126dp"
+			    android:layout_height="180dp"
+			    android:layout_marginRight="10dp"
+			    android:background="#333"
+			    android:src="@drawable/ic_flyer_thumb"/>
+			
+			<LinearLayout android:orientation="vertical"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content">
+			    
+			    <!-- Date layout -->
+			    <RelativeLayout android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginBottom="10dp">
+				    <ImageView android:id="@+id/party_date_indicator"
+				        android:layout_width="24dp"
+				        android:layout_height="24dp"
+				        android:layout_alignParentLeft="true"
+				        android:layout_alignBottom="@+id/party_date"
+				        android:src="@drawable/ic_date"/>
+			        <TextView android:id="@+id/party_date"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignParentRight="true"
+		        		android:layout_toRightOf="@+id/party_date_indicator"
+				    	android:textSize="13sp"
+				    	android:gravity="right"
+				    	android:textColor="#FFF"
+				    	android:text="zaterdag 7 september"/>
+				    <ImageView android:layout_width="match_parent"
+					    android:layout_height="1dp"
+					    android:background="#0099cc"
+					    android:layout_below="@+id/party_date"
+					    android:layout_marginTop="5dp"/>
+			    </RelativeLayout>
+			    
+			    <!-- Age + Time -->
+			    <LinearLayout android:orientation="horizontal"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginBottom="10dp">
+			        
+			        <!-- Age layout -->
+			       <RelativeLayout
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginRight="15dp">
+						<ImageView android:id="@+id/party_age_indicator"
+				        	android:layout_width="24dp"
+				       	 	android:layout_height="24dp"
+				        	android:layout_alignBottom="@+id/party_age"
+				        	android:layout_marginRight="5dp"
+				       	 	android:src="@drawable/ic_age"/>
+		            	<TextView android:id="@+id/party_age"
+						    android:layout_toRightOf="@+id/party_age_indicator"
+						    android:layout_width="wrap_content"
+		            	    android:layout_height="wrap_content"
+				    		android:textSize="13sp"
+				    		android:gravity="right"
+				    		android:textColor="#FFF"
+		            	    android:text="18+"/>
+						<ImageView 
+						    android:layout_width="wrap_content"
+					    	android:layout_height="1dp"
+					    	android:background="#0099cc"
+					    	android:layout_alignRight="@+id/party_age"
+					    	android:layout_alignLeft="@+id/party_age_indicator"
+					    	android:layout_below="@+id/party_age"
+					    	android:layout_marginTop="5dp"/>
+			         </RelativeLayout>
+			        
+			        <!-- Time layout -->
+			        <RelativeLayout
+			            android:layout_weight="1"
+			            android:layout_width="0dp"
+			            android:layout_height="wrap_content">
+			            
+						<ImageView android:id="@+id/party_time_indicator"
+				        	android:layout_width="24dp"
+				       	 	android:layout_height="24dp"
+				        	android:layout_alignBottom="@+id/party_time"
+				       	 	android:src="@drawable/ic_time"/>
+			            
+						<TextView android:id="@+id/party_time"
+						    android:layout_toRightOf="@+id/party_time_indicator"
+						    android:layout_width="fill_parent"
+		            	    android:layout_height="wrap_content"
+				    		android:textSize="13sp"
+				    		android:gravity="right"
+				    		android:textColor="#FFF"
+		            	    android:text="Time"/>
+						
+						<ImageView android:layout_width="fill_parent"
+					    	android:layout_height="1dp"
+					    	android:background="#0099cc"
+					    	android:layout_below="@+id/party_time"
+					    	android:layout_marginTop="5dp"/>
+			        </RelativeLayout>	<!-- Time -->
+			    </LinearLayout> <!-- Age + Time -->
+			    
+	
+	
+			    <!-- Time, back-up 
+			    <RelativeLayout android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginBottom="10dp">
+				    <ImageView android:id="@+id/party_time_indicator"
+				        android:layout_width="24dp"
+				        android:layout_height="24dp"
+				        android:layout_alignParentLeft="true"
+				        android:layout_alignBottom="@+id/party_time"
+				        android:src="@drawable/ic_time"/>
+			        <TextView android:id="@+id/party_time"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignParentRight="true"
+		        		android:layout_toRightOf="@+id/party_time_indicator"
+				    	android:textSize="13sp"
+				    	android:gravity="right"
+				    	android:textColor="#FFF"
+				    	android:text="22:00 - 07:00"/>
+				    <ImageView android:layout_width="match_parent"
+					    android:layout_height="1dp"
+					    android:background="#0099cc"
+					    android:layout_below="@+id/party_time"
+					    android:layout_marginTop="5dp"/>
+			    </RelativeLayout>
+			     -->
+	
+			    <!-- Price layout -->
+			    <RelativeLayout android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginBottom="10dp">
+				    <ImageView android:id="@+id/party_price_indicator"
+				        android:layout_width="24dp"
+				        android:layout_height="24dp"
+				        android:layout_alignParentLeft="true"
+				        android:layout_alignBottom="@+id/party_price"
+				        android:src="@drawable/ic_price"/>
+			        <TextView android:id="@+id/party_price"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignParentRight="true"
+		        		android:layout_toRightOf="@+id/party_price_indicator"
+				    	android:textSize="13sp"
+				    	android:gravity="right"
+				    	android:textColor="#FFF"
+				    	android:text="22,50 (ex fee)\r\nVIP: 35,50 (ex fee)"/>
+				    <ImageView android:layout_width="match_parent"
+					    android:layout_height="1dp"
+					    android:background="#0099cc"
+					    android:layout_below="@+id/party_price"
+					    android:layout_marginTop="5dp"/>
+			    </RelativeLayout>
+	
+			    <!-- Venue layout -->
+			    <RelativeLayout android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginBottom="10dp">
+				    <ImageView android:id="@+id/party_venue_indicator"
+				        android:layout_width="24dp"
+				        android:layout_height="24dp"
+				        android:layout_alignParentLeft="true"
+				        android:layout_alignBottom="@+id/party_venue"
+				        android:src="@drawable/ic_venue"/>
+			        <TextView android:id="@+id/party_venue"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignParentRight="true"
+		        		android:layout_toRightOf="@+id/party_venue_indicator"
+				    	android:textSize="13sp"
+				    	android:gravity="right"
+				    	android:textColor="#FFF"
+				    	android:text="North Sea Venue"/>
+				    <ImageView android:layout_width="match_parent"
+					    android:layout_height="1dp"
+					    android:background="#0099cc"
+					    android:layout_below="@+id/party_venue"
+					    android:layout_marginTop="5dp"/>
+			    </RelativeLayout>
+	
+			    <!-- City layout 
+			        android:layout_marginBottom=10dp -->
+			    <RelativeLayout android:layout_width="fill_parent"
+			        android:layout_height="wrap_content">
+				    <ImageView android:id="@+id/party_city_indicator"
+				        android:layout_width="24dp"
+				        android:layout_height="24dp"
+				        android:layout_alignParentLeft="true"
+				        android:layout_alignBottom="@+id/party_city"
+				        android:src="@drawable/ic_city"/>
+			        <TextView android:id="@+id/party_city"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignParentRight="true"
+		        		android:layout_toRightOf="@+id/party_city_indicator"
+				    	android:textSize="13sp"
+				    	android:gravity="right"
+				    	android:textColor="#FFF"
+				    	android:text="Alphen aan den Rijn"/>
+				    <ImageView android:layout_width="match_parent"
+					    android:layout_height="1dp"
+					    android:background="#0099cc"
+					    android:layout_below="@+id/party_city"
+					    android:layout_marginTop="5dp"/>
+			    </RelativeLayout>
+	
+			</LinearLayout>
+			    
+		</LinearLayout>
+		
+	    <!-- Genres layout -->
+	    <RelativeLayout android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp">
+		   <ImageView
+		        android:id="@+id/party_genres_indicator" 
+		        android:layout_width="24dp"
+		        android:layout_height="24dp"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignBottom="@+id/party_genres"
+		        android:src="@drawable/ic_genres"/>
+		    <TextView android:id="@+id/party_genres"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_toRightOf="@+id/party_genres_indicator"
+		    	android:textSize="13sp"
+		    	android:gravity="right"
+		    	android:textColor="#FFF"
+		    	android:text="hardstyle / hardcore"/>
+		    <ImageView android:layout_width="match_parent"
+			    android:layout_height="1dp"
+			    android:background="#0099cc"
+			    android:layout_below="@+id/party_genres"
+			    android:layout_marginTop="5dp"/>
+	    </RelativeLayout>
+	    
+       <TextView
+           android:text="Line-Up"
+           style="?android:attr/listSeparatorTextViewStyle" 
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:textColor="#33B5E5"/>
+	    
+	    <TextView android:id="@+id/party_line_up"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:textSize="13sp"
+	        android:textColor="#FFF"
+	        android:text="Line-up\r\nLine-up\r\nLine-up\r\nLine-up\r\nLine-up\r\nLine-up\r\nLine-up\r\nLine-up\r\nLine-up\r\nLine-up"/>
+	
+	    <!-- Online -->
+       <TextView
+           android:text="Online"
+           style="?android:attr/listSeparatorTextViewStyle" 
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:textColor="#33B5E5"/>
+	    
+	    <!-- Online buttons -->
+	    <LinearLayout android:orientation="horizontal"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp">
+		    <Button android:id="@+id/party_buy_ticket" 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:layout_marginRight="2dp"
+		        android:textSize="13sp"
+		        android:text="Ticket kopen"
+		        android:enabled="true"/>
+		    <Button android:id="@+id/party_book_trip"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:layout_marginLeft="2dp"
+		        android:textSize="13sp"
+		        android:text="Busreis boeken"
+		        android:enabled="true"/>
+	    </LinearLayout>
+	    <Button android:id="@+id/party_visit_website"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="4dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginBottom="10dp"
+		    android:textSize="13sp"
+	        android:text="Website bezoeken"
+		    android:enabled="true"/>
+	    
+	</LinearLayout>
+</ScrollView>

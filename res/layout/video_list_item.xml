@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp">
+    
+    <RelativeLayout android:id="@+id/video_list_item_thumb_frame"
+        	android:layout_width="81dp"
+	        android:layout_height="61dp"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="5dp"
+	        android:background="#666">
+	        
+	    <ImageView android:id="@+id/video_list_item_thumb"
+	        android:src="@drawable/youtube_thumb"
+	        android:layout_width="80dp"
+	        android:layout_height="60dp"
+	        android:layout_centerInParent="true" />
+	    
+	    <TextView android:id="@+id/video_list_item_duration"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_margin="3dp"
+	        android:background="#AA000000"
+	        android:textColor="#CCC"
+	        android:textSize="11sp"
+	        android:text="12:23">
+	        
+	    </TextView>
+    </RelativeLayout>
+    
+    <TextView android:id="@+id/video_list_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/video_list_item_thumb_frame"
+	    android:textSize="13sp"
+	    android:textColor="#FFF"/>
+    
+    <TextView android:id="@+id/video_list_item_uploader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/video_list_item_thumb_frame"
+        android:layout_below="@+id/video_list_item_title"
+	    android:textSize="11sp"
+	    android:text="Masters of Hardcore"
+	    android:textColor="#F00"/>
+
+    <TextView android:id="@+id/video_list_item_uploaded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/video_list_item_thumb_frame"
+        android:layout_below="@+id/video_list_item_uploader"
+	    android:textSize="11sp"
+	    android:text="29 mei 2013"
+	    android:textColor="#CCC"/>
+    
+</RelativeLayout>

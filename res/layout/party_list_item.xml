@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+	<TextView android:id="@+id/party_list_item_section"
+	    android:text="Section header"
+	    style="?android:attr/listSeparatorTextViewStyle" 
+	    android:textColor="#33B5E5"
+	    android:clickable="true"/>
+    
+    <!-- 33B5E5 @+id/party_list_item_section -->
+	<RelativeLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+		          
+	    <ImageView android:id="@+id/party_list_item_icon"
+			android:contentDescription="party icon"
+			android:src="@drawable/ic_launcher"
+	        android:layout_width="80dp"
+	        android:layout_height="80dp"
+	        android:padding="10dp"
+	        android:layout_centerVertical="true" />
+	
+		<TextView android:id="@+id/party_list_item_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/party_list_item_icon"
+			android:layout_toLeftOf="@+id/party_list_item_date"
+			android:layout_alignParentTop="true"
+			android:layout_marginTop="5dp"
+			android:layout_marginRight="3dp"
+			android:singleLine="true"
+			android:textSize="16sp"
+			android:textColor="#FFF"/>
+	
+		<TextView android:id="@+id/party_list_item_venue"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/party_list_item_icon"
+			android:layout_below="@+id/party_list_item_name"
+			android:singleLine="true"
+			android:textSize="12sp"
+			android:text="North Sea Venue, Zaandam"/>
+		
+		<LinearLayout android:orientation="horizontal"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_toRightOf="@+id/party_list_item_icon"
+			android:layout_below="@+id/party_list_item_venue"
+			android:layout_marginTop="5dp">
+		    
+		    <ImageView android:id="@+id/party_list_item_popularity1"
+		        android:layout_width="12dp"
+		        android:layout_height="12dp"
+		        android:layout_marginRight="2dp"
+		        android:src="@drawable/ic_star_on"/>
+		    
+		    <ImageView android:id="@+id/party_list_item_popularity2"
+		        android:layout_width="12dp"
+		        android:layout_height="12dp"
+		        android:layout_marginRight="2dp"
+		        android:src="@drawable/ic_star_on"/>
+		    
+		    <ImageView android:id="@+id/party_list_item_popularity3"
+		        android:layout_width="12dp"
+		        android:layout_height="12dp"
+		        android:layout_marginRight="2dp"
+		        android:src="@drawable/ic_star_on"/>
+		    
+		    <ImageView android:id="@+id/party_list_item_popularity4"
+		        android:layout_width="12dp"
+		        android:layout_height="12dp"
+		        android:layout_marginRight="2dp"
+		        android:src="@drawable/ic_star_off"/>
+		    
+		    <ImageView android:id="@+id/party_list_item_popularity5"
+		        android:layout_width="12dp"
+		        android:layout_height="12dp"
+		        android:src="@drawable/ic_star_off"/>
+		    
+		</LinearLayout>
+		
+		<!-- 
+		<TextView android:id="@+id/party_list_item_popularity"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/party_list_item_icon"
+			android:layout_below="@+id/party_list_item_venue"
+			android:singleLine="true"
+			android:textSize="12sp"
+			android:text="# # # # #"/>
+		-->
+		
+		<!-- Date -->
+		<TextView android:id="@+id/party_list_item_date"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="15dp"
+	        android:layout_marginTop="5dp"
+	        android:textSize="12sp"
+	        android:text="za 18 jul." />
+	</RelativeLayout>
+
+</LinearLayout>

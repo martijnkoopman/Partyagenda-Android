@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Partyagenda - Harder Styles</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_search">Zoeken</string>
+    <string name="menu_refresh">Vernieuwen</string>
+    <string name="menu_settings">Instellingen</string>
+    <string name="menu_about">Over deze app</string>
+    <string name="menu_share">Delen</string>
+    <string name="menu_favo">Favo</string>
+
+    <string-array name="navigation_list">
+        <item>Alle Feesten</item>
+        <item>Mijn Feesten</item>
+    </string-array>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_party_detail">Party Details</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">Instellingen</string>
+    <string name="title_activity_about">Over deze app</string>
+    <string name="privacy_link"><a href="http://www.google.nl">Privacyverklaring</a></string>
+    <string name="license_link"><a href="http://www.google.nl">Google Maps licentie</a></string>
+
+    <!-- Preferences -->
+    <string name="automatic_update_title">Automatisch updaten</string>
+    <string name="automatic_update_summary">Iedere dag</string>
+
+    <string-array name="automatic_update_entries">
+        <item>Iedere dag</item>
+        <item>Om de dag</item>
+        <item>Elke 3 dagen</item>
+    </string-array>
+    <string-array name="automatic_update_entryvalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string name="automatic_update_dialog_title">Automatisch updaten</string>
+    <string name="list_group_title">Lijstweergave groeperen</string>
+    <string name="list_group_summary">Per week</string>
+
+    <string-array name="list_group_entries">
+        <item>Per week</item>
+        <item>Per maand</item>
+    </string-array>
+    <string-array name="list_group_entryvalues">
+        <item>week</item>
+        <item>maand</item>
+    </string-array>
+
+    <string name="list_group_dialog_title">Lijstweergave groeperen</string>
+    <string name="automatic_thumb_download_title">Flyer thumbs downloaden</string>
+    <string name="automatic_thumb_download_summary">Flyer thumbnails direct downloaden bij ophalen nieuwe feesten</string>
+
+	<string name="title_activity_party_flyer">Flyer</string>
+</resources>

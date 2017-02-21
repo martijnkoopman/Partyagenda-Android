@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_share"
+        android:title="@string/menu_share" 
+        android:icon="@drawable/ic_menu_share" 
+        android:showAsAction="ifRoom"
+        android:actionProviderClass="android.widget.ShareActionProvider"/>
+    <item
+        android:id="@+id/menu_favo"
+        android:title="@string/menu_favo" 
+        android:icon="@drawable/ic_menu_favo_off" 
+        android:showAsAction="ifRoom"/>
+    
+</menu>

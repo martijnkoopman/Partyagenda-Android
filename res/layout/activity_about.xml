@@ -1,0 +1,184 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+  
+    <!-- Info -->
+	<ScrollView android:layout_weight="1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+		  	android:layout_height="fill_parent"
+			android:layout_gravity="center_horizontal"
+			android:layout_margin="10dp"
+		    android:orientation="vertical">
+		      
+			<TextView
+			   	android:layout_width="wrap_content"
+			   	android:layout_height="wrap_content"
+			   	android:layout_gravity="center_horizontal"
+			   	android:textColor="#FFF"
+			   	android:textSize="20sp"
+			   	android:textStyle="bold"
+			   	android:text="Partyagenda - Harder Styles"/>
+		     	
+			<TextView
+			   	android:layout_width="wrap_content"
+			   	android:layout_height="wrap_content"
+			   	android:layout_gravity="center_horizontal"
+			   	android:textSize="14sp"
+			   	android:text="Versie 2.0"/>
+			
+			<ImageView
+			    android:layout_width="200dp"
+			    android:layout_height="200dp"
+			   	android:layout_gravity="center_horizontal"
+			    android:layout_margin="10dp"
+			    android:src="@drawable/ic_app_icon"/>
+			
+			<TextView
+			   	android:layout_width="wrap_content"
+			   	android:layout_height="wrap_content"
+			   	android:layout_gravity="center_horizontal"
+			   	android:gravity="center_horizontal"
+			   	android:textSize="14sp"
+			   	android:text="© 2012 - 2014 Martijn Koopman.\nAlle rechten voorbehouden."/>
+			
+			<TextView android:id="@+id/privacy_link"
+			   	android:layout_width="wrap_content"
+			   	android:layout_height="wrap_content"
+			   	android:layout_gravity="center_horizontal"
+			   	android:textSize="12sp"
+			   	android:layout_marginTop="20dp"/>
+			
+			<TextView android:id="@+id/license_link"
+			   	android:layout_width="wrap_content"
+			   	android:layout_height="wrap_content"
+			   	android:layout_gravity="center_horizontal"
+			   	android:textSize="12sp"
+			   	android:layout_marginTop="10dp"/>
+		</LinearLayout>
+	</ScrollView>
+    
+	<!-- Buttons -->
+    <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+	    
+		<Button android:id="@+id/about_feedback"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Feedback versturen"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:layout_marginTop="5dp"/>
+		
+		<Button android:id="@+id/about_review"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Recensie schrijven op Google Play"
+		    android:layout_margin="5dp"/>
+	</LinearLayout>
+    
+</LinearLayout>
+<!-- 
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+
+	<LinearLayout
+	    android:id="@+id/bottom"
+	    android:layout_alignParentBottom="true"
+	   	
+		android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	    android:orientation="vertical">
+		<Button android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Feedback geven"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:layout_marginTop="5dp"/>
+		
+		<Button android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Geef je waardering"
+		    android:layout_margin="5dp"/>
+	</LinearLayout>
+	
+
+	<ScrollView android:layout_above="@+id/bottom"
+	    android:layout_alignParentTop="true"
+		android:layout_width="fill_parent"
+	  	android:layout_height="fill_parent"
+	    >
+
+		<LinearLayout
+		    android:layout_gravity="center"
+			android:layout_width="fill_parent"
+		  	android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    >
+		      
+			<TextView android:id="@+id/aggbcd"
+			   	android:layout_width="wrap_content"
+			   	android:layout_height="wrap_content"
+			   	android:layout_gravity="center_horizontal"
+			   	android:textColor="#FFF"
+			   	android:textSize="20sp"
+			   	android:textStyle="bold"
+			   	android:text="Partyagenda - Harder Styles"/>
+		     	
+			<TextView android:id="@+id/abcaffaad"
+			   	android:layout_width="wrap_content"
+			   	android:layout_height="wrap_content"
+			   	android:layout_gravity="center_horizontal"
+			   	android:textSize="14sp"
+			   	android:text="Versie 2.0"/>
+			
+			<ImageView android:id="@+id/about_icon" 
+			   	android:layout_gravity="center_horizontal"
+			    android:layout_width="200dp"
+			    android:layout_height="200dp"
+			    android:layout_margin="10dp"
+			    android:src="@drawable/ic_app_icon"/>
+			
+			<TextView android:id="@+id/abcawwaad"
+			   	android:layout_width="wrap_content"
+			   	android:layout_height="wrap_content"
+			   	android:layout_gravity="center_horizontal"
+			   	android:gravity="center_horizontal"
+			   	android:textSize="14sp"
+			   	android:text="© 2012 - 2014 Martijn Koopman.\nAlle rechten voorbehouden."/>
+			
+			<TextView android:id="@+id/abcaaadfwwqqaaad"
+			   	android:layout_width="wrap_content"
+			   	android:layout_height="wrap_content"
+			   	android:layout_gravity="center_horizontal"
+			   	android:gravity="center_horizontal"
+			   	android:textSize="12sp"
+			   	android:layout_marginTop="20dp"
+			   	android:autoLink="all"
+			   	android:linksClickable="true"
+			   	android:text="@string/privacy_link"/>
+			
+			<TextView android:id="@+id/abaacadfdfdfaad"
+			   	android:layout_width="wrap_content"
+			   	android:layout_height="wrap_content"
+			   	android:layout_gravity="center_horizontal"
+			   	android:gravity="center_horizontal"
+			   	android:textSize="12sp"
+			   	android:layout_marginTop="10dp"
+			   	android:autoLink="all"
+			   	android:linksClickable="true"
+			   	android:text="@string/license_link"/>
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>
+ -->

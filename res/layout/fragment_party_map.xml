@@ -1,0 +1,37 @@
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/map"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  class="com.google.android.gms.maps.MapFragment"/>
+
+<!-- 
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".PartyMapFragment"
+    android:orientation="vertical"
+    android:layout_margin="0dp">
+    
+    <Button android:id="@+id/party_start_navigation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+	    android:textSize="13sp"
+        android:text="Start navigatie"
+	    android:enabled="true"/>
+
+
+	<com.google.android.gms.maps.MapView
+	    android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+  <fragment
+    class="com.google.android.gms.maps.MapFragment"
+    android:id="@+id/map"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"/>
+	
+	</LinearLayout>
+-->

@@ -1,0 +1,38 @@
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+	   <PreferenceCategory
+	       android:title="Feesten laden">
+
+        <ListPreference
+                android:key="automatic_update"
+                android:title="@string/automatic_update_title"
+                android:summary="@string/automatic_update_summary"
+                android:entries="@array/automatic_update_entries"
+                android:entryValues="@array/automatic_update_entryvalues"
+                android:dialogTitle="@string/automatic_update_dialog_title"
+                android:defaultValue="3" />
+
+         <CheckBoxPreference
+        	android:key="automatic_thumb_download"
+        	android:title="@string/automatic_thumb_download_title"
+        	android:summary="@string/automatic_thumb_download_summary"
+        	android:defaultValue="true" />
+         
+        
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+            android:title="Weergave">
+                
+        <ListPreference
+                android:key="list_group"
+                android:title="@string/list_group_title"
+                android:summary="@string/list_group_summary"
+                android:entries="@array/list_group_entries"
+                android:entryValues="@array/list_group_entryvalues"
+                android:dialogTitle="@string/list_group_dialog_title"
+                android:defaultValue="week" />
+    </PreferenceCategory>
+    
+</PreferenceScreen>
