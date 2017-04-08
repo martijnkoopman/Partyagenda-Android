@@ -31,4 +31,4 @@ The Android application acquires information about future parties by downloading
 Import the source code (including the manifest) into an Android Studio project. Compile and run.
 
 ## License
-This project is licensed under the Apache License 2.0 - see the [LICENSE.md](LICENSE.md) LICENSE.md file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) LICENSE.md file for details.
